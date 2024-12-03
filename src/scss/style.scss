@@ -1,0 +1,41 @@
+@import 'fonts';
+@import 'modules/reset';
+@import 'modules/variables';
+@import 'modules/circle';
+@import 'modules/header';
+@import 'modules/navigation';
+@import 'modules/hero';
+@import 'modules/study';
+
+body {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.container {
+  max-width: 1284px;
+  margin: 0 auto;
+}
+
+.blur {
+  filter: blur(10px);
+}
+
+@media(width <= 1399px) {
+  .container {
+    padding: 0 2rem;
+  }
+}
+
+@media(width <= 575px) {
+  .container {
+    padding: 0 1rem;
+  }
+}
+
+
+
+
+
+
