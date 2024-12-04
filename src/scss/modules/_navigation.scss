@@ -33,26 +33,6 @@
       
     }
   }
-
-  &__btn {
-    background-color: transparent;
-    font-weight: 500;
-    color: $color-white;
-    padding: 16px 22px;
-    border: 1px solid $color-white;
-    border-radius: 15px;
-    cursor: pointer;
-    transition: all 0.5s;
-
-    &:hover {
-      color: $color-hover;
-      border: 1px solid $color-hover;
-    }
-
-    &:checked {
-      background-color: $color-hover;
-    }
-  }
 }
 
 .burger, .burger__toggle {
