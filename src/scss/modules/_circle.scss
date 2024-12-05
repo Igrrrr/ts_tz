@@ -15,6 +15,7 @@
     background: radial-gradient(63.25% 73.53% at 65.32% 77.65%, #045DFA 0%, #0FC1D7 83.16%, #06F6C7 100%);
   } @else if $gradient-type == linear {
     background: linear-gradient(170.98deg, rgba(95, 56, 255, 0.25) 25.59%, rgba(255, 14, 222, 0.25) 100.44%);
+  } @else if $gradient-type == linear-green {
+    background: linear-gradient(170.98deg, rgba(195, 243, 58, 0.25) 25.59%, rgba(41, 209, 89, 0.25) 100.44%);
   }
-
 }

@@ -1,17 +1,25 @@
 .hero {
-  
   background-color: $background;
   color: $color-white;
-  padding-top: 100px;
-  padding-bottom: 134px;
+  //padding-top: 100px;
+  //padding-bottom: 134px;
+  padding: 100px 0 270px;
+  //padding: 100px 0 134px;
+
  
   &__container {
     position: relative;
-    padding-top: 118px;
+    //background-color: yellowgreen;
+    //padding-top: 118px;
+    //margin-top: 100px;
   }
   
   &__title {
     position: relative;
+    padding-top: 118px;
+    //margin-top: 218px;
+
+    //padding-top: 218px;
     font-size: 72px;
     font-weight: 400;
     line-height: 75.6px;
@@ -21,6 +29,8 @@
 
   &__img {
     position: absolute;
+    // top: -130px;
+    // right: -40px;
     top: 0;
     right: 0;
     width: 863px;
@@ -29,6 +39,10 @@
 
   &__description {
     margin-top: 20px;
+  }
+
+  &__button {
+    margin-top: 67px;
   }
 }
 
@@ -54,6 +68,7 @@
     }
   }
 }
+
 @media(width <= 991px) {
 
   .hero {
@@ -71,8 +86,21 @@
 }
 @media(width <= 767px) {
 
-  .hero__img {
-    max-width: 500px;
+  .hero {
+    padding: 105px 0 50px;
+    // &__container {
+    //   margin-top: 105px;
+    // }
+    &__title {
+      padding-top: 0;
+    }
+    &__img {
+      max-width: 500px;
+    }
+  
+    &__button {
+      margin-top: 40px;
+    }
   }
 }
 

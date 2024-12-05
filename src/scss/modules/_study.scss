@@ -127,6 +127,7 @@
 
 @media(width <= 767px) {
   .study {
+    margin-top: 70px;
     padding-top: 40px;
 
     &__title {
@@ -189,7 +190,7 @@
         transform: translateY(-50%);
         right: 0;
       }
-      
+
       &_big-bottom {
         display: none;
       }

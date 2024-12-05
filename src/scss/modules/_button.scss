@@ -1,5 +1,4 @@
 .button {
-
   background-color: transparent;
   font-weight: 500;
   color: $color-white;
@@ -14,15 +13,14 @@
     border: 1px solid $color-hover;
   }
 
-  &:checked {
-    background-color: $color-hover;
+  &:active {
+    background-color: $color-active;
   }
   
 
   &_colored {
     position: relative;
-    //margin-top: 67px;
-    background: rgb(29,216,68);
+    //background: rgb(29,216,68);
     background: linear-gradient(90deg, rgba(29,216,68,1) 0%, rgba(203,246,46,1) 100%);
     color: $background;
     font-size: 20px;
@@ -34,7 +32,7 @@
     cursor: pointer;
     z-index: 1;
     transition: all 0.3s;
-
+    
     &::after {
       content: "";
       position: absolute;
@@ -48,6 +46,19 @@
     &:hover::after {
       inset: -8px
     }
+
+    &:active {
+      -webkit-box-shadow: 0px 10px 10px -5px rgba(34, 60, 80, 0.2) inset;
+      -moz-box-shadow: 0px 10px 10px -5px rgba(34, 60, 80, 0.2) inset;
+      box-shadow: 0px 10px 10px -5px rgba(34, 60, 80, 1) inset;
+    }
   }
-  
+}
+
+@media(width <= 767px) {
+  .button {
+    &_colored {
+      font-size: 16px;
+    }
+  }
 }
