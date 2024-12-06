@@ -42,6 +42,15 @@ const closeByOverlayClick = ({ currentTarget, target }) => {
   }
 };
 
+const anchors = document.querySelectorAll("a[href*='#']");
+anchors.forEach((anchor) => {
+  anchor.addEventListener("click", function (e) {
+    e.preventDefault();
+    const targetId = anchor.getAttribute("href");
+    document.querySelector(targetId).scrollIntoView({ behavior: "smooth" });
+  });
+});
+
 burger.addEventListener("change", addOrRemoveBlur);
 openModal.addEventListener("click", openModalAndBlockScroll);
 closeModal.addEventListener("click", close);
