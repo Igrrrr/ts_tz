@@ -3,7 +3,6 @@
   background-color: $background;
   border-radius: 20px;
   margin-top: 195px;
-  //margin-top: 195px !important;
   padding: 130px 0;
 
   &__decoration-circle {
@@ -96,7 +95,7 @@
       background-color: rgba(51, 62, 81);
       filter: saturate(0.6);
       z-index: -1;
-      width: 300px;
+      width: 115%;
       height: calc(100% - 20px);
       border-radius: inherit;
       top: 0
@@ -130,6 +129,7 @@
   .study {
     margin-top: 70px;
     padding-top: 40px;
+    padding-bottom: 100px;
 
     &__title {
       font-size: 23px;
@@ -151,8 +151,8 @@
       }
 
       &_blue-top {
-        left: 20px;
-        top: 103px;
+        left: 5px;
+        top: 135px;
       }
 
       &_radial-purple {

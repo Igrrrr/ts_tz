@@ -30,7 +30,6 @@
 
     &:hover {
       color: $color-hover;
-      
     }
   }
 }
@@ -101,17 +100,12 @@
       right: 0;
     }
 
-    // &__toggle:checked ~ .nav__button {
-    //   margin-top: 50px;
-    // }
-
     &__toggle:checked {
       .hero__img {
         display: none;
       }
     } 
   }
-
 }
 
 @media(width <= 575px) {

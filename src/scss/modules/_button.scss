@@ -16,11 +16,9 @@
   &:active {
     background-color: $color-active;
   }
-  
 
   &_colored {
     position: relative;
-    //background: rgb(29,216,68);
     background: linear-gradient(90deg, rgba(29,216,68,1) 0%, rgba(203,246,46,1) 100%);
     color: $background;
     font-size: 20px;

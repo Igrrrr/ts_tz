@@ -10,10 +10,9 @@
         $filter: blur(172px)
       )
     }
-    
+
     &_big-top {
-      transform: translateY(-30%);
-      left: 0;
+      transform: translate(-60%, -50%);
     }
   }
 }

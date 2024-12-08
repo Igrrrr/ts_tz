@@ -22,7 +22,9 @@ body {
 
 .container {
   max-width: 1280px;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
 }
 
 .blur {
@@ -35,13 +37,8 @@ body {
 
 @media(width <= 1399px) {
   .container {
-    padding: 0 2rem;
-  }
-}
-
-@media(width <= 575px) {
-  .container {
-    padding: 0 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 }
 
